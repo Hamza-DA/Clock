@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+.clockholder {
+  margin-top: 20px;
+  height: 70vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clockholder .frame {
+  border: 10px solid #202020;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.clockholder .frame .tick {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.clockholder .frame .tick .t1 {
+  position: absolute;
+  height: 15px;
+  width: 6px;
+  left: calc(50% - 3px);
+  top: -10px;
+  border-radius: 2px;
+  background-color: #3d3d3d;
+}
+
+.clockholder .frame .tick .t2 {
+  position: absolute;
+  height: 15px;
+  width: 6px;
+  left: calc(50% - 3px);
+  bottom: -10px;
+  border-radius: 2px;
+  background-color: #3d3d3d;
+}
+
+.clockholder .frame .tick .t3 {
+  position: absolute;
+  height: 6px;
+  width: 15px;
+  left: -10px;
+  bottom: calc(50% - 3px);
+  border-radius: 2px;
+  background-color: #3d3d3d;
+}
+
+.clockholder .frame .tick .t4 {
+  position: absolute;
+  height: 6px;
+  width: 15px;
+  right: -10px;
+  bottom: calc(50% - 3px);
+  border-radius: 2px;
+  background-color: #3d3d3d;
+}
+
+.clockholder .frame .t {
+  height: 120px;
+  width: 8px;
+  border-radius: 4px;
+  background-color: #15ebef;
+  position: absolute;
+  left: calc(50% - 4px);
+  top: 10%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: .1s ease all;
+  transition: .1s ease all;
+}
+
+.clockholder .frame .r {
+  height: 140px;
+  width: 2px;
+  border-radius: 2px;
+  background-color: #fd154b;
+  position: absolute;
+  left: calc(50% - 1px);
+  top: 2%;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transition: .1s ease all;
+  transition: .1s ease all;
+}
+
+.clockholder .frame .s {
+  height: 90px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #affc0b;
+  position: absolute;
+  left: calc(50% - 5px);
+  top: 52%;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transition: .1s ease all;
+  transition: .1s ease all;
+}
+
+.clockholder .frame .c {
+  height: 12px;
+  width: 12px;
+  background-color: #000;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 6px);
+  top: calc(50%);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.card {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 40px);
+  height: 100px;
+  background-color: #3c3c3c;
+  border-radius: 20px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .digit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card .digit h2 {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 2rem;
+  width: 36px;
+}
+
+.card .digit span {
+  color: #fff;
+  margin: 0 2px;
+  font-size: 2rem;
+}
+
+.card .digit h3 {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
